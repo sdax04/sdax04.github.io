@@ -129,37 +129,31 @@
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
         
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>live2d_test</title>
-</head>
 <body>
-    <link rel="stylesheet" href="live2d/css/live2d/css">
 
-    <script src="./live2d/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript">
-            var message_Path='live2d/message.json';
-            var home_Path='https://sdax04.github.io'
-    </script>
-    <script type="text/javascript" src="live2d/js/live2d.js"></script>
-    <script type="text/javascript" src="live2d/js/message.js"></script>
-    <script type="text/javascript">
-        loadlive2d("live2d","live2d/model/tia/model.json");
-    </script>
+<!--引入css文件-->
+<link rel="stylesheet" href="./live2d/css/live2d.css" />
 
+<!--引入js文件-->
+<script src="../live2d/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+        var message_Path = './live2d/message.json';
+        var home_Path = 'https://Sdax04.github.com/'               //此处可以修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="./live2d/js/live2d.js"></script>
+<script type="text/javascript" src="./live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "./live2d/model/tia/model.json");
+</script>
 
 <div id="landlord">
-    <div class="message" style="opacity:0"></div>
-    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
-    <div class="hide-button">隐藏</div>
+       <div class="message" style="opacity:0"></div>
+       <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+       <div class="hide-button">隐藏</div>
 </div>
+
 </body>
-</html>
+
       </section>
 
       
